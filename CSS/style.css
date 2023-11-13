@@ -1,31 +1,17 @@
 * {
     margin: 0%;
     padding: 0%;
-}
-
-.title__flor{
-    align-items: center;
-    font-size: 40px; 
-       
-}
-    
-
-body{    
-   background-image: url('../Img/flor-de-trigo-logo.jpg');   
-   width: 100%;
-   background-size: cover;
-   
-}
+}    
 
 /*.menu */
 
 .menu {
-    font-size:20px;
+    font-size:40px;
     list-style-type: none;
     display: flex;
-    background-color: #bebebe
-    justify-content: space-evenly;
-}
+    background-color: #f5C11B;   
+    justify-content: space-evenly;     
+    }
 
 .menu__item {
     display: inline;
@@ -36,6 +22,7 @@ body{
     color: black;  
     padding: 30px 50px;
     text-decoration: none;
+    
 }
 
 .menu__link:hover {
@@ -44,21 +31,28 @@ body{
     border-bottom: 5px solid #444;
 }
 
-.menu__link--active {
-    border-bottom: 5px solid black;
+
+.main-banner{        
+    display: flex;   
+    padding: 200px;
+    height: 20px;
+    justify-content: space-between;   
+    
+    
 }
 
-main{
-background-color: rgba(255, 255, 255, 0.5);
-margin-top: 80px;
-width: 100%;
-
-}
-
-.title-flor{
-    text-align: center;
+.main-banner h1{
+    text-align: left; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: blue;
-    
-    
+    color: #4D17D1;  
+    font-size: 50px;    
+    padding: 80px;
 }
+
+.main-banner img{    
+    width: 300px;
+    }
+   
+    
+
+
