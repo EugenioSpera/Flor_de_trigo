@@ -10,7 +10,8 @@
     list-style-type: none;
     display: flex;
     background-color: #f5C11B;   
-    justify-content: space-evenly;     
+    justify-content: space-evenly;   
+    
     }
 
 .menu__item {
@@ -51,18 +52,29 @@
 }
 
 .main-banner h1{
-    text-align: left; 
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #4D17D1;  
-    font-size: 50px;    
-    padding: 80px;
+    color:#fff; 
+    font-style: bold; 
+    font-size: 50px; 
+    margin-top: -100px;   
+    padding-left: 100px;
 }
 
 .main-banner img{    
     width: 300px;
-    }
+    margin-top: -250px;
+    margin-right: -100px;
+    
+}
 
-main{
+.main-banner p{
+    color: black;
+    font-size: 50px;
+    font-style: bold;
+    margin-left: -1200px;
+    padding-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 .container-descricao{
