@@ -48,12 +48,13 @@
     background-image: url("../Img/fotofundo.jpg"); 
     background-position: center;
     background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
 .main-banner h1{
     
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
     color:#fff; 
     font-style: bold; 
     font-size: 50px; 
@@ -74,13 +75,14 @@
     font-style: bold;
     margin-left: -1200px;
     padding-top: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
+
+
 .container-descricao{
-padding: 5em 0;
-display: flex;
-flex-direction: column;
+    padding: 5em 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .foto{
@@ -89,9 +91,9 @@ flex-direction: column;
 }
 
  .foto img{
-  padding: 30px 80px 30px 0;
-  display: flex;
-  width: 20%;
+    padding: 30px 80px 30px 0;
+    display: flex;
+     width: 20%;
 
 }
 
@@ -124,6 +126,74 @@ flex-direction: column;
     width: 90%;
     margin: 0 auto;
 }
-    
 
+
+    
+.menu-about{
+    font-size:50px;   
+    list-style-type: none;
+    display: flex;
+    background-color: #f5C11B;   
+    justify-content: space-evenly;     
+    color: #4D17D1;   
+    
+    }
+
+ .menu-about h1{
+    background-position: center;
+    padding: 20px;
+    margin-left: 500px;
+    text-align: center;
+    }
+
+.menu-about img{  
+    display: flex; 
+    width: 200px;
+    margin-bottom: -50px;
+    margin-top: -40px;
+    }    
+
+      
+.main__about{
+    padding: 100px;    
+    color:#fff;
+    background-color: black;
+    font-size: 30px;        
+    }  
+    
+.foto1{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    width: 1440;
+    padding:0%    
+    }
+
+.foto1-1{
+        width: 100%;
+}
+    
+.menu-product{
+    font-size:50px;   
+    list-style-type: none;
+    display: flex;
+    background-color: #f5C11B;   
+    justify-content: space-evenly;     
+    color: #4D17D1;   
+}
+
+.menu-product h1{
+    background-position: center;
+    padding: 20px;
+    margin-left: 500px;
+    text-align: center;
+}    
+
+.menu-product img{  
+    display: flex; 
+    width: 200px;
+    margin-bottom: -50px;
+    margin-top: -40px;
+    
+}    
 
