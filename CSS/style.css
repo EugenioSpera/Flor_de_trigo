@@ -10,19 +10,25 @@
     list-style-type: none;
     display: flex;
     background-color: #f5C11B;   
-    justify-content: space-evenly;   
+    justify-content: space-evenly;  
+    width: 100vw; 
     
-    }
-
-.menu__item {
-    display: inline;
 }
+
+.menu__itens {
+    display: flex;
+    
+}
+
+
 
 .menu__link {
     display: block;
     color: black;  
     padding: 30px 50px;
     text-decoration: none;
+    transition: background-color 1s ease,
+        color 0.5s ease;
     
 }
 
@@ -32,11 +38,17 @@
     border-bottom: 5px solid #444;
 }
 
+.menu__logo,
+.menu input {
+    display: none;
+}
+
 .container{
     
     max-width: 992px;
     min-width: 320px;
     margin: 0 auto;
+   
 }
 
 
@@ -52,14 +64,14 @@
     
 }
 
-.main-banner h1{
-    
+.main-banner h1{    
     
     color:#fff; 
     font-style: bold; 
     font-size: 50px; 
     margin-top: -100px;   
     padding-left: 100px;
+    display:block ;
 }
 
 .main-banner img{    
@@ -83,6 +95,7 @@
     padding: 5em 0;
     display: flex;
     flex-direction: column;
+    
 }
 
 .foto{
@@ -100,10 +113,15 @@
 .foto h2{
     text-align: center;
     font-size: 50px;
-    color: #4D17D1;
+    color: #fff;
     display: flex;
     padding-right: 80px;
 
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -112,6 +130,7 @@
     background-color: #f5C11B;
     padding: 50px;
     justify-content: space-evenly;
+    
 }
 
 .links ul{
@@ -135,12 +154,12 @@
     text-align: center;
 }
 .links-icons{
-    flex-direction:column;
-    
+    flex-direction:column;    
 }
 
-
-
+.fa-brands{
+    font-size: 50px;
+}
 
     
 .menu-about{
@@ -149,12 +168,11 @@
     display: flex;
     background-color: #f5C11B;   
     justify-content: space-evenly;     
-    color: #4D17D1;   
-    
+    color: #4D17D1;       
     }
 
  .menu-about h1{
-    background-position: center;
+    flex-direction: column;    
     padding: 20px;
     margin-left: 500px;
     text-align: center;
@@ -165,7 +183,11 @@
     width: 200px;
     margin-bottom: -50px;
     margin-top: -40px;
-    }    
+    }  
+    
+.main__itens{
+    background-color: black;
+}    
 
       
 .main__about{
@@ -237,4 +259,27 @@
     align-items: center;  
 }
 
-
+/* telas pequenas*/
+@media screen and (max-width:768px){
+    .menu__itens .links {
+    display: none;
+    flex-direction: column;    
+}
+.menu__link {
+    border-top: 1px solid rgb(200, 200, 250);
+    width: 100%;
+    padding: 0;
+    min-width: 200px;
+    }
+    
+    .menu__logo {
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    }
+    
+    .menu input:checked~.menu__itens{
+        display: block;
+    }
+    
+    }

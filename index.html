@@ -11,38 +11,44 @@
 <body>
     <header>
 
-        <nav>
-            <ul class="menu menu-flor">
-                <li class="menu__item--menuflor"><a class="menu__link menu__link--active" href="#home">Home</a></li>
-                <li class="menu__item"><a class="menu__link" href="./about.html">Quem somos</a></li>
-                <li class="menu__item"><a class="menu__link" href="./product.html">Produtos</a></li>
+        <nav class="menu">
+            <label class="menu__logo" for="hamb-menu">
+                &#9776
+            </label>
+            <input type="checkbox" id="hamb-menu">
+            <ul class="menu__itens"></ul>
+            <li class="menu__item--menuflor"><a class="menu__link menu__link--active" href="#home">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="./about.html">Quem somos</a></li>
+            <li class="menu__item"><a class="menu__link" href="./product.html">Produtos</a></li>
             </ul>
 
         </nav>
     </header>
 
     <main>
-        <div class="main-banner">
-            <h1>Flor de Trigo 013</h1>
-            <p>Massas Artesanais</p>
-            <div class="img-logo">
-                <img src="./Img/Logo_sem_fundo.png" alt="logo">
+        <div class="main__itens">
+            <div class="main-banner">
+                <h1>Flor de Trigo 013</h1>
+                <p>Massas Artesanais</p>
+                <div class="img-logo">
+                    <img src="./Img/Logo_sem_fundo.png" alt="logo">
+                </div>
             </div>
-        </div>
 
-        <div class="container">
-            <div class="container-descricao">
-                <div class="foto">
-                    <img src="./Img/marguerita.jpg" alt="pizza-marguerita">
-                    <h2>Pizzas congeladas</h2>
-                </div>
-                <div class="foto">
-                    <img src="./Img/nhoque.jpg" alt="nhoque">
-                    <h2>Nhoques</h2>
-                </div>
-                <div class="foto">
-                    <img src="./Img/rondelli.jpg" alt="Rondelli">
-                    <h2>Rondellis</h2>
+            <div class="container">
+                <div class="container-descricao">
+                    <div class="foto">
+                        <img src="./Img/marguerita.jpg" alt="pizza-marguerita">
+                        <h2>Pizzas congeladas</h2>
+                    </div>
+                    <div class="foto">
+                        <img src="./Img/nhoque.jpg" alt="nhoque">
+                        <h2>Nhoques</h2>
+                    </div>
+                    <div class="foto">
+                        <img src="./Img/rondelli.jpg" alt="Rondelli">
+                        <h2>Rondellis</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,9 +56,25 @@
     <footer>
         <div class="links">
             <ul>
-                <li><a href="link" target="_blank">Instagram</a></li>
-                <li><a href="link" target="_blank">Facebook</a></li>
-                <li><a href="link" target="_blank">Yotube</a></li>
+                <li>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <a href="link" target="_blank">Instagram</a>
+                </li>
+
+                <li>
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="link" target="_blank">Facebook</a>
+                </li>
+
+                <li>
+                    <i class="fa-brands fa-youtube"></i>
+                    <a href="link" target="_blank">Yotube</a>
+                </li>
+
+                <li>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="link" target="_blank">Whatsapp</a>
+                </li>
             </ul>
         </div>
     </footer>
