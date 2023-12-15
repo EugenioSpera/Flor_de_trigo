@@ -20,14 +20,16 @@
     justify-content: center;
     
 }
-
+.menu__item{
+    list-style-type: none;
+}
 
 
 .menu__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;  
+    color:#4D17D1;  
     padding: 0px 24px;
     height: 64px;
     text-decoration: none;
@@ -93,14 +95,6 @@ img{
     margin-top: -250px;
     margin-right: -100px;
     
-}
-
-.main-banner h2{
-    color: black;
-    font-size: 50px;
-    font-style: bold;    
-    padding-top: 40px;  
-    margin-right: 1500;  
 }
 
 
@@ -174,31 +168,9 @@ footer{
 
 .fa-brands{
     font-size: 50px;
-}
+}    
 
-    
-.menu-about{
-    font-size:50px;   
-    list-style-type: none;
-    display: flex;
-    background-color: #f5C11B;   
-    justify-content: space-evenly;     
-    color: #4D17D1;       
-    }
 
- .menu-about h1{
-    flex-direction: column;    
-    padding: 20px;
-    margin-left: 500px;
-    text-align: center;
-    }
-
-.menu-about img{  
-    display: flex; 
-    width: 200px;
-    margin-bottom: -50px;
-    margin-top: -40px;
-    }  
     
 .main__itens{
     background-color: black;
@@ -223,29 +195,8 @@ footer{
 .foto1-1{
         width: 100%;
 }
-    
-.menu-product{
-    font-size:50px;   
-    list-style-type: none;
-    display: flex;
-    background-color: #f5C11B;   
-    justify-content: space-evenly;     
-    color: #4D17D1;   
-}
 
-.menu-product h1{
-    background-position: center;
-    padding: 20px;
-    margin-left: 500px;
-    text-align: center;
-}    
 
-.menu-product img{  
-    display: flex; 
-    width: 200px;
-    margin-bottom: -50px;
-    margin-top: -40px;    
-}    
 
 .table{
     font-size: 30px;
@@ -254,7 +205,7 @@ footer{
     color: #fff;
     background-color: black;
     width: 100%;
-    padding: 0 0 50px 0;
+    padding: 50px 50px 50px 30px;
     justify-content: space-between;
     
 }
@@ -263,26 +214,21 @@ footer{
 
     width: 300px;
     height: 300px;
-    padding: 300px 50px 10px 30px;
-    display: flex;
-    
+    padding: 300px 50px 50px 30px;
+    display: flex;   
 
 }
 
 .main__product{
     display: flex;
     align-items: center;  
+    background-color: black;
 }
 
-.menu__link {
-    border-top: 1px solid rgb(200, 200, 250);
-    width: 100%;
-    padding: 0;
-    min-width: 200px;
-    }
+
     
     .menu__logo {
-    display: block;
+    
     color: #fff;
     font-size: 2rem;
     }
@@ -291,12 +237,9 @@ footer{
         display: block;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:768px) {
 
-        .menu__logo,
-        .menu input {
-            display: block;
-        }
+        
         
 
         .menu__itens{
@@ -305,7 +248,7 @@ footer{
         }
     
         .menu__link {
-            border-top: 1px solid rgb(200, 200, 258);
+            border-top: 1px solid rgb(200, 200, 250);
             width: 100%;
             padding: 0;
             min-width: 200px;
@@ -315,7 +258,7 @@ footer{
             display: block;
             color:#fff;
             font-size: 2rem;
-            cursor: pointer;
+            
         }
     
         .menu input:checked~.menu__itens{
@@ -326,6 +269,11 @@ footer{
          .links ul{
         flex-direction: column;                        
          }
+
+         .main__product{
+            display: block;
+            flex-direction: column; 
+        }
          }
 
 
