@@ -5,23 +5,29 @@
 
 /*.menu */
 
+header{
+    width: 100%;
+}
+
 .menu {
     font-size:40px;
     list-style-type: none;
     display: flex;
     background-color: #f5C11B;   
     justify-content: space-evenly;  
-    width: 100vw; 
+    width: 100%; 
     
 }
 
 .menu__itens {
     display: flex;
     justify-content: center;
+    gap: 40px;
     
 }
 .menu__item{
     list-style-type: none;
+    margin-top: 20px;
 }
 
 
@@ -49,24 +55,21 @@
 }
 
 img{    
-    width: 200px;
-    margin-bottom: -50px;
-    margin-top: -40px;
-}
-
-.container{
+    width: 120px;
     
-    max-width: 992px;
-    min-width: 320px;
-    margin: 0 auto;
-   
 }
 
+
+
+/*main*/
+
+.main__itens{
+    background-color: black;
+}    
 
 .main-banner{        
-    display: flex;   
-    padding: 200px;
-    height: 20px;
+    display: flex;     
+    height: 500px;
     justify-content: space-between;  
     background-image: url("../Img/fotofundo.jpg"); 
     background-position: center;
@@ -80,21 +83,23 @@ img{
     color:#fff; 
     font-style: bold; 
     font-size: 50px; 
-    margin-top: -100px;   
-    padding-left: 100px;
+     
+    
         
 }
 
 .main-bannerH1{
     display: flex;
-    flex-direction: column;
+    
 }
 
-.main-banner img{    
-    width: 300px;
-    margin-top: -250px;
-    margin-right: -100px;
+
+.container{
     
+    max-width: 992px;
+    min-width: 320px;
+    margin: 0 auto;
+   
 }
 
 
@@ -120,7 +125,7 @@ img{
 
 .foto h2{
     text-align: center;
-    font-size: 50px;
+    font-size: 5rem;
     color: #fff;
     display: flex;
     padding-right: 80px;
@@ -128,24 +133,33 @@ img{
 
 }
 
+
+/*FOOTER*/
+
 footer{
     display: flex;
+    width: 100%;
     
 }
+
+
 
 
 .links{
     display: flex;
     flex-direction: column;
     background-color: #f5C11B;
-    padding: 50px;
+    gap: 50px;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
+    
     
 }
 
 .links ul{
     display: flex;
+    
     
 }
 
@@ -153,13 +167,14 @@ footer{
     font-size:20px;
     list-style: none; 
     text-align: center;   
-    padding: 150px;
+    flex-direction: column;
+    display: flex;
     
     
 }
 .links ul li{
-    width: 90%;
-    margin: 0 auto;
+    width: 50%;
+    margin-top: 20px;
     text-align: center;
 }
 .links-icons{
@@ -172,10 +187,10 @@ footer{
 
 
     
-.main__itens{
-    background-color: black;
-}    
 
+
+
+/*ABOUT*/
       
 .main__about{
     padding: 100px;    
@@ -193,49 +208,53 @@ footer{
     }
 
 .foto1-1{
-        width: 100%;
-}
-
-
-
-.table{
-    font-size: 30px;
-    justify-content:center; 
-    display: flex;
-    color: #fff;
-    background-color: black;
     width: 100%;
-    padding: 50px 50px 50px 30px;
-    justify-content: space-between;
-    
 }
 
-.table img{
 
-    width: 300px;
-    height: 300px;
-    padding: 300px 50px 50px 30px;
-    display: flex;   
 
-}
+/*Product*/
 
 .main__product{
     display: flex;
     align-items: center;  
+    justify-content: center;
     background-color: black;
+    
+}
+
+.table{
+    font-size: 30px;
+    display: flex;
+    color: #fff;
+    background-color: black;
+    width: 70%;
+    margin: 20px;
+    gap: 30px;
+    
+    
+}
+
+img{
+
+   width: 150px;
+   height: 150px;    
+   
+}
+
+.main__product img{
+
+    margin-top: 200px;
 }
 
 
+
+
+
     
-    .menu__logo {
-    
-    color: #fff;
-    font-size: 2rem;
-    }
-    
-    .menu input:checked~.menu__itens{
-        display: block;
-    }
+
+
+
 
     @media screen and (max-width:768px) {
 
@@ -266,15 +285,50 @@ footer{
 
          }
 
-         .links ul{
-        flex-direction: column;                        
+         .foto{
+
+            display: flex;
+            flex-direction: column;
+            
          }
 
-         .main__product{
+         .main-banner h1{ 
+
+            margin: 0;
+            font-size: 2rem;
+         }
+
+         .container-descricao h2{
+            font-size: 1rem;
+         }
+         
+
+         .main__product img{
             display: block;
             flex-direction: column; 
+            margin: 0;
+            
         }
-         }
+         
 
+        .links{
 
-    
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .links ul{
+            flex-direction: column;                        
+             }
+         
+
+        .table{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        }
